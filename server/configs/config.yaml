@@ -1,0 +1,29 @@
+http:
+  addr: ":8080"
+  mode: debug
+
+# 本机 phpstudy MySQL 8.0.12
+db:
+  dsn: "root:123456@tcp(127.0.0.1:3306)/lanping?parseTime=true&loc=Local&charset=utf8mb4&timeout=5s&readTimeout=10s&writeTimeout=10s"
+
+jwt:
+  secret: "lanping-dev-secret-change-me"
+  expire_hours: 72
+
+migrate:
+  auto: true
+  dir: "migrations"
+
+# 阿里云短信服务（通知短信，非验证码产品）
+# 文档：https://help.aliyun.com/zh/sms/developer-reference/api-dysmsapi-2017-05-25-sendsms
+# AccessKey 也可用环境变量 LP_SMS_ACCESS_KEY_ID / LP_SMS_ACCESS_KEY_SECRET 注入，勿提交仓库
+sms:
+  enabled: false
+  access_key_id: ""
+  access_key_secret: ""
+  endpoint: "dysmsapi.aliyuncs.com"
+  sign_name: "兰瓶"
+  # 控制台审核通过后的模板 Code（CreateSmsTemplate 返回 / 控制台复制）
+  tpl_birthday: ""   # 生日 SMS_xxx
+  tpl_consume: ""    # 消费 SMS_xxx
+  tpl_appoint: ""    # 预约 SMS_xxx

@@ -1,0 +1,1402 @@
+[
+  {
+    "module": "A-env",
+    "case": "health-200",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 74
+  },
+  {
+    "module": "A-env",
+    "case": "health-alias",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "A-auth",
+    "case": "login-admin",
+    "ok": true,
+    "detail": "role=admin",
+    "ms": 198
+  },
+  {
+    "module": "A-auth",
+    "case": "login-manager",
+    "ok": true,
+    "detail": "role=manager",
+    "ms": 162
+  },
+  {
+    "module": "A-auth",
+    "case": "login-staff",
+    "ok": true,
+    "detail": "role=staff",
+    "ms": 145
+  },
+  {
+    "module": "A-auth",
+    "case": "login-wrong-pwd",
+    "ok": true,
+    "detail": "status=401",
+    "ms": 90
+  },
+  {
+    "module": "A-auth",
+    "case": "login-empty-phone",
+    "ok": true,
+    "detail": "status=400",
+    "ms": 2
+  },
+  {
+    "module": "A-auth",
+    "case": "login-unknown-user",
+    "ok": true,
+    "detail": "status=401",
+    "ms": 2
+  },
+  {
+    "module": "A-auth",
+    "case": "login-empty-body",
+    "ok": true,
+    "detail": "status=400",
+    "ms": 1
+  },
+  {
+    "module": "A-auth",
+    "case": "me-admin",
+    "ok": true,
+    "detail": "name=张美丽",
+    "ms": 2
+  },
+  {
+    "module": "A-auth",
+    "case": "me-manager",
+    "ok": true,
+    "detail": "",
+    "ms": 2
+  },
+  {
+    "module": "A-auth",
+    "case": "me-staff",
+    "ok": true,
+    "detail": "",
+    "ms": 2
+  },
+  {
+    "module": "A-auth",
+    "case": "me-no-token",
+    "ok": true,
+    "detail": "status=401",
+    "ms": 1
+  },
+  {
+    "module": "A-auth",
+    "case": "me-bad-token",
+    "ok": true,
+    "detail": "status=401",
+    "ms": 1
+  },
+  {
+    "module": "A-auth",
+    "case": "api-no-token",
+    "ok": true,
+    "detail": "status=401",
+    "ms": 1
+  },
+  {
+    "module": "A-auth",
+    "case": "customer-login",
+    "ok": true,
+    "detail": "status=200 err=",
+    "ms": 21
+  },
+  {
+    "module": "A-auth",
+    "case": "customer-me",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 15
+  },
+  {
+    "module": "B-store",
+    "case": "list-admin",
+    "ok": true,
+    "detail": "n=4",
+    "ms": 2
+  },
+  {
+    "module": "B-store",
+    "case": "list-manager",
+    "ok": true,
+    "detail": "n=4",
+    "ms": 1
+  },
+  {
+    "module": "B-store",
+    "case": "public-list",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 13
+  },
+  {
+    "module": "B-store",
+    "case": "create-admin",
+    "ok": true,
+    "detail": "id=5",
+    "ms": 71
+  },
+  {
+    "module": "B-store",
+    "case": "create-manager-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 1
+  },
+  {
+    "module": "B-store",
+    "case": "create-staff-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 1
+  },
+  {
+    "module": "B-store",
+    "case": "update-admin",
+    "ok": true,
+    "detail": "",
+    "ms": 93
+  },
+  {
+    "module": "B-store",
+    "case": "update-staff-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 2
+  },
+  {
+    "module": "B-user",
+    "case": "list-admin",
+    "ok": true,
+    "detail": "n=9",
+    "ms": 19
+  },
+  {
+    "module": "B-user",
+    "case": "list-manager",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 3
+  },
+  {
+    "module": "B-user",
+    "case": "create-admin",
+    "ok": true,
+    "detail": "id=10 err=",
+    "ms": 193
+  },
+  {
+    "module": "B-user",
+    "case": "update-admin",
+    "ok": true,
+    "detail": "",
+    "ms": 93
+  },
+  {
+    "module": "B-user",
+    "case": "create-staff-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 1
+  },
+  {
+    "module": "C-customer",
+    "case": "create-0",
+    "ok": true,
+    "detail": "id=18",
+    "ms": 137
+  },
+  {
+    "module": "C-customer",
+    "case": "create-1",
+    "ok": true,
+    "detail": "id=19",
+    "ms": 209
+  },
+  {
+    "module": "C-customer",
+    "case": "create-2",
+    "ok": true,
+    "detail": "id=20",
+    "ms": 139
+  },
+  {
+    "module": "C-customer",
+    "case": "create-missing-phone",
+    "ok": true,
+    "detail": "status=400 err=请填写姓名和手机号",
+    "ms": 2
+  },
+  {
+    "module": "C-customer",
+    "case": "create-dup-phone-behavior",
+    "ok": true,
+    "detail": "status=400 ok=False err=Error 1062 (23000): Duplicate entry '13952364840' for key 'uk_mobile'",
+    "ms": 106
+  },
+  {
+    "module": "C-customer",
+    "case": "list-page1",
+    "ok": true,
+    "detail": "total=12",
+    "ms": 3
+  },
+  {
+    "module": "C-customer",
+    "case": "list-page2",
+    "ok": true,
+    "detail": "list_n=2",
+    "ms": 2
+  },
+  {
+    "module": "C-customer",
+    "case": "detail",
+    "ok": true,
+    "detail": "",
+    "ms": 22
+  },
+  {
+    "module": "C-customer",
+    "case": "detail-missing",
+    "ok": true,
+    "detail": "status=404",
+    "ms": 3
+  },
+  {
+    "module": "C-customer",
+    "case": "update",
+    "ok": true,
+    "detail": "",
+    "ms": 68
+  },
+  {
+    "module": "C-customer",
+    "case": "birthday-upcoming",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 69
+  },
+  {
+    "module": "C-customer",
+    "case": "list-staff",
+    "ok": true,
+    "detail": "total=12",
+    "ms": 3
+  },
+  {
+    "module": "C-customer",
+    "case": "delete",
+    "ok": true,
+    "detail": "id=20",
+    "ms": 67
+  },
+  {
+    "module": "C-customer",
+    "case": "detail-after-delete",
+    "ok": true,
+    "detail": "status=404",
+    "ms": 69
+  },
+  {
+    "module": "D-project",
+    "case": "list",
+    "ok": true,
+    "detail": "n=6",
+    "ms": 2
+  },
+  {
+    "module": "D-project",
+    "case": "list-on-shelf",
+    "ok": true,
+    "detail": "n=6",
+    "ms": 2
+  },
+  {
+    "module": "D-project",
+    "case": "create-admin",
+    "ok": true,
+    "detail": "id=7",
+    "ms": 93
+  },
+  {
+    "module": "D-project",
+    "case": "create-manager-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 84
+  },
+  {
+    "module": "D-project",
+    "case": "update",
+    "ok": true,
+    "detail": "",
+    "ms": 57
+  },
+  {
+    "module": "D-project",
+    "case": "off-shelf",
+    "ok": true,
+    "detail": "",
+    "ms": 81
+  },
+  {
+    "module": "D-project",
+    "case": "delete",
+    "ok": true,
+    "detail": "status=200 err=",
+    "ms": 227
+  },
+  {
+    "module": "D-project",
+    "case": "create-invalid",
+    "ok": true,
+    "detail": "status=400",
+    "ms": 51
+  },
+  {
+    "module": "E-appt",
+    "case": "availability",
+    "ok": true,
+    "detail": "n=4",
+    "ms": 24
+  },
+  {
+    "module": "E-appt",
+    "case": "create-empty",
+    "ok": true,
+    "detail": "status=400",
+    "ms": 2
+  },
+  {
+    "module": "E-appt",
+    "case": "create-missing-time",
+    "ok": true,
+    "detail": "err=请选择客户、项目、日期和时间",
+    "ms": 2
+  },
+  {
+    "module": "E-appt",
+    "case": "create-bad-customer",
+    "ok": true,
+    "detail": "err=请选择客户、项目、日期和时间",
+    "ms": 1
+  },
+  {
+    "module": "E-appt",
+    "case": "create-ok",
+    "ok": true,
+    "detail": "id=8",
+    "ms": 83
+  },
+  {
+    "module": "E-appt",
+    "case": "conflict",
+    "ok": true,
+    "detail": "err=该美容师此时段忙碌，请选择其他时间或美容师",
+    "ms": 3
+  },
+  {
+    "module": "E-appt",
+    "case": "other-slot",
+    "ok": true,
+    "detail": "id=9",
+    "ms": 120
+  },
+  {
+    "module": "E-appt",
+    "case": "other-staff-same-time",
+    "ok": true,
+    "detail": "id=10 err=",
+    "ms": 99
+  },
+  {
+    "module": "E-appt",
+    "case": "status-已确认",
+    "ok": true,
+    "detail": "id=8",
+    "ms": 75
+  },
+  {
+    "module": "E-appt",
+    "case": "status-待确认",
+    "ok": true,
+    "detail": "id=8",
+    "ms": 83
+  },
+  {
+    "module": "E-appt",
+    "case": "status-已完成",
+    "ok": true,
+    "detail": "id=8",
+    "ms": 82
+  },
+  {
+    "module": "E-appt",
+    "case": "status-已取消",
+    "ok": true,
+    "detail": "id=8",
+    "ms": 92
+  },
+  {
+    "module": "E-appt",
+    "case": "status-post-alias",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 88
+  },
+  {
+    "module": "E-appt",
+    "case": "delete",
+    "ok": true,
+    "detail": "status=200 err=",
+    "ms": 115
+  },
+  {
+    "module": "E-appt",
+    "case": "list",
+    "ok": true,
+    "detail": "total=5",
+    "ms": 3
+  },
+  {
+    "module": "E-appt",
+    "case": "list-staff",
+    "ok": true,
+    "detail": "total=4",
+    "ms": 65
+  },
+  {
+    "module": "E-appt",
+    "case": "availability-later",
+    "ok": true,
+    "detail": "n=4",
+    "ms": 5
+  },
+  {
+    "module": "E-appt",
+    "case": "availability-no-time",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 11
+  },
+  {
+    "module": "F-card",
+    "case": "open-times",
+    "ok": true,
+    "detail": "id=14 remain=5",
+    "ms": 274
+  },
+  {
+    "module": "F-card",
+    "case": "open-amount",
+    "ok": true,
+    "detail": "id=15",
+    "ms": 245
+  },
+  {
+    "module": "F-card",
+    "case": "open-times-default-amount",
+    "ok": true,
+    "detail": "id=16 amount=13600",
+    "ms": 225
+  },
+  {
+    "module": "F-card",
+    "case": "open-no-customer",
+    "ok": true,
+    "detail": "err=请选择客户",
+    "ms": 54
+  },
+  {
+    "module": "F-card",
+    "case": "open-times-no-project",
+    "ok": true,
+    "detail": "err=请选择项目",
+    "ms": 1
+  },
+  {
+    "module": "F-card",
+    "case": "open-amount-zero",
+    "ok": true,
+    "detail": "err=请输入充值金额",
+    "ms": 1
+  },
+  {
+    "module": "F-card",
+    "case": "open-amount-negative",
+    "ok": true,
+    "detail": "err=请输入充值金额",
+    "ms": 1
+  },
+  {
+    "module": "F-card",
+    "case": "open-by-staff",
+    "ok": true,
+    "detail": "status=200 err=",
+    "ms": 224
+  },
+  {
+    "module": "F-card",
+    "case": "list",
+    "ok": true,
+    "detail": "total=15",
+    "ms": 54
+  },
+  {
+    "module": "F-card",
+    "case": "list-by-customer",
+    "ok": true,
+    "detail": "n=4",
+    "ms": 3
+  },
+  {
+    "module": "F-card",
+    "case": "list-admin",
+    "ok": true,
+    "detail": "total=15",
+    "ms": 3
+  },
+  {
+    "module": "F-card",
+    "case": "open-bad-kind",
+    "ok": true,
+    "detail": "err=开卡类型仅支持次卡或储值 kind=None",
+    "ms": 1
+  },
+  {
+    "module": "G-verify",
+    "case": "set-mock",
+    "ok": true,
+    "detail": "",
+    "ms": 86
+  },
+  {
+    "module": "G-verify",
+    "case": "get-settings",
+    "ok": true,
+    "detail": "mode=mock",
+    "ms": 2
+  },
+  {
+    "module": "G-verify",
+    "case": "draft1",
+    "ok": true,
+    "detail": "id=4",
+    "ms": 104
+  },
+  {
+    "module": "G-verify",
+    "case": "get-draft",
+    "ok": true,
+    "detail": "status=待确认",
+    "ms": 54
+  },
+  {
+    "module": "G-verify",
+    "case": "list",
+    "ok": true,
+    "detail": "total=0",
+    "ms": 3
+  },
+  {
+    "module": "G-verify",
+    "case": "sms-logs",
+    "ok": true,
+    "detail": "n=4",
+    "ms": 4
+  },
+  {
+    "module": "G-verify",
+    "case": "sms-logs-staff-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 1
+  },
+  {
+    "module": "G-verify",
+    "case": "draft2",
+    "ok": false,
+    "detail": "id=None",
+    "ms": 113
+  },
+  {
+    "module": "G-verify",
+    "case": "cancel",
+    "ok": true,
+    "detail": "skipped",
+    "ms": 0
+  },
+  {
+    "module": "G-verify",
+    "case": "confirm-bad-token",
+    "ok": true,
+    "detail": "err=核销令牌不匹配",
+    "ms": 71
+  },
+  {
+    "module": "G-verify",
+    "case": "confirm-ok",
+    "ok": true,
+    "detail": "",
+    "ms": 216
+  },
+  {
+    "module": "G-verify",
+    "case": "confirm-twice",
+    "ok": true,
+    "detail": "err=核销单状态不可确认",
+    "ms": 57
+  },
+  {
+    "module": "G-verify",
+    "case": "amount-card-reject",
+    "ok": true,
+    "detail": "err=储值卡请走金额核销，暂不支持次数核销",
+    "ms": 3
+  },
+  {
+    "module": "G-verify",
+    "case": "times-zero",
+    "ok": true,
+    "detail": "status=200 ok=True err=",
+    "ms": 87
+  },
+  {
+    "module": "G-verify",
+    "case": "times-overflow",
+    "ok": true,
+    "detail": "err=剩余次数不足",
+    "ms": 2
+  },
+  {
+    "module": "G-verify",
+    "case": "bad-card",
+    "ok": true,
+    "detail": "err=卡不存在",
+    "ms": 2
+  },
+  {
+    "module": "G-verify",
+    "case": "remain-after-confirm",
+    "ok": true,
+    "detail": "remain=4",
+    "ms": 15
+  },
+  {
+    "module": "G-verify",
+    "case": "public-get",
+    "ok": true,
+    "detail": "skipped",
+    "ms": 0
+  },
+  {
+    "module": "G-verify",
+    "case": "public-confirm",
+    "ok": true,
+    "detail": "skipped",
+    "ms": 0
+  },
+  {
+    "module": "G-verify",
+    "case": "refund-manager",
+    "ok": true,
+    "detail": "status=200 ok=True err=",
+    "ms": 103
+  },
+  {
+    "module": "G-verify",
+    "case": "refund-staff-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 1
+  },
+  {
+    "module": "H-inv",
+    "case": "items",
+    "ok": true,
+    "detail": "n=7",
+    "ms": 2
+  },
+  {
+    "module": "H-inv",
+    "case": "stock",
+    "ok": true,
+    "detail": "n=3",
+    "ms": 2
+  },
+  {
+    "module": "H-inv",
+    "case": "create-item",
+    "ok": true,
+    "detail": "id=8",
+    "ms": 194
+  },
+  {
+    "module": "H-inv",
+    "case": "create-empty-name",
+    "ok": true,
+    "detail": "err=请填写产品名称",
+    "ms": 3
+  },
+  {
+    "module": "H-inv",
+    "case": "create-staff-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 3
+  },
+  {
+    "module": "H-inv",
+    "case": "update-item",
+    "ok": true,
+    "detail": "",
+    "ms": 207
+  },
+  {
+    "module": "H-inv",
+    "case": "order-in",
+    "ok": true,
+    "detail": "",
+    "ms": 116
+  },
+  {
+    "module": "H-inv",
+    "case": "order-out",
+    "ok": true,
+    "detail": "",
+    "ms": 150
+  },
+  {
+    "module": "H-inv",
+    "case": "order-out-insufficient",
+    "ok": true,
+    "detail": "err=库存不足",
+    "ms": 67
+  },
+  {
+    "module": "H-inv",
+    "case": "order-qty-zero",
+    "ok": true,
+    "detail": "status=400",
+    "ms": 2
+  },
+  {
+    "module": "H-inv",
+    "case": "order-staff-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 1
+  },
+  {
+    "module": "H-inv",
+    "case": "stock-after",
+    "ok": true,
+    "detail": "qty=27",
+    "ms": 22
+  },
+  {
+    "module": "H-inv",
+    "case": "delete-with-stock",
+    "ok": true,
+    "detail": "status=400 ok=False err=该产品仍有门店库存，无法删除",
+    "ms": 2
+  },
+  {
+    "module": "I-reg",
+    "case": "register-a",
+    "ok": true,
+    "detail": "phone=13597039015",
+    "ms": 76
+  },
+  {
+    "module": "I-reg",
+    "case": "register-b",
+    "ok": true,
+    "detail": "phone=13443255878",
+    "ms": 161
+  },
+  {
+    "module": "I-reg",
+    "case": "register-invalid",
+    "ok": true,
+    "detail": "err=请填写姓名、手机号并选择门店",
+    "ms": 60
+  },
+  {
+    "module": "I-reg",
+    "case": "login-before-approve",
+    "ok": true,
+    "detail": "status=401",
+    "ms": 2
+  },
+  {
+    "module": "I-reg",
+    "case": "audit-list",
+    "ok": true,
+    "detail": "a=6 b=7",
+    "ms": 4
+  },
+  {
+    "module": "I-reg",
+    "case": "approve-a",
+    "ok": true,
+    "detail": "",
+    "ms": 145
+  },
+  {
+    "module": "I-reg",
+    "case": "login-after-approve",
+    "ok": true,
+    "detail": "",
+    "ms": 134
+  },
+  {
+    "module": "I-reg",
+    "case": "reject-b",
+    "ok": true,
+    "detail": "",
+    "ms": 82
+  },
+  {
+    "module": "I-reg",
+    "case": "login-after-reject",
+    "ok": true,
+    "detail": "status=401",
+    "ms": 2
+  },
+  {
+    "module": "I-reg",
+    "case": "approve-staff-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 1
+  },
+  {
+    "module": "J-salary",
+    "case": "get-rules",
+    "ok": true,
+    "detail": "",
+    "ms": 1
+  },
+  {
+    "module": "J-salary",
+    "case": "get-rules-staff",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "J-salary",
+    "case": "compute",
+    "ok": true,
+    "detail": "month=2026-11",
+    "ms": 604
+  },
+  {
+    "module": "J-salary",
+    "case": "compute-manager-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 59
+  },
+  {
+    "module": "J-salary",
+    "case": "records",
+    "ok": true,
+    "detail": "n=10",
+    "ms": 14
+  },
+  {
+    "module": "J-salary",
+    "case": "record-status",
+    "ok": true,
+    "detail": "status=200 err=",
+    "ms": 130
+  },
+  {
+    "module": "J-salary",
+    "case": "assessments",
+    "ok": true,
+    "detail": "total=2",
+    "ms": 4
+  },
+  {
+    "module": "J-salary",
+    "case": "assessments-result",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 3
+  },
+  {
+    "module": "J-att",
+    "case": "check-locate",
+    "ok": true,
+    "detail": "",
+    "ms": 100
+  },
+  {
+    "module": "J-att",
+    "case": "check-wifi-checkout",
+    "ok": true,
+    "detail": "",
+    "ms": 80
+  },
+  {
+    "module": "J-att",
+    "case": "today",
+    "ok": true,
+    "detail": "data={'check_in': '14:10:45', 'check_out': '14:15:04', 'checked_in': True, 'checked_out': True, 'date': '2026-11-14', 'status': '正常'}",
+    "ms": 3
+  },
+  {
+    "module": "J-att",
+    "case": "check-manager",
+    "ok": true,
+    "detail": "",
+    "ms": 97
+  },
+  {
+    "module": "K-misc",
+    "case": "welfare-list",
+    "ok": true,
+    "detail": "n=5",
+    "ms": 54
+  },
+  {
+    "module": "K-misc",
+    "case": "welfare-create",
+    "ok": true,
+    "detail": "id=6 err=",
+    "ms": 87
+  },
+  {
+    "module": "K-misc",
+    "case": "welfare-update",
+    "ok": true,
+    "detail": "",
+    "ms": 83
+  },
+  {
+    "module": "K-misc",
+    "case": "welfare-issue",
+    "ok": false,
+    "detail": "status=400 err=请选择员工",
+    "ms": 2
+  },
+  {
+    "module": "K-misc",
+    "case": "welfare-delete",
+    "ok": true,
+    "detail": "",
+    "ms": 105
+  },
+  {
+    "module": "K-misc",
+    "case": "welfare-staff-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 53
+  },
+  {
+    "module": "K-misc",
+    "case": "messages",
+    "ok": true,
+    "detail": "total=1",
+    "ms": 15
+  },
+  {
+    "module": "K-misc",
+    "case": "operate-logs",
+    "ok": true,
+    "detail": "total=80",
+    "ms": 25
+  },
+  {
+    "module": "K-misc",
+    "case": "operate-logs-mgr-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 2
+  },
+  {
+    "module": "K-misc",
+    "case": "dashboard",
+    "ok": true,
+    "detail": "keys=['card_amount', 'customer_total', 'new_customers', 'pending_audit', 'pending_verify', 'revenue']",
+    "ms": 11
+  },
+  {
+    "module": "K-misc",
+    "case": "workbench-mgr",
+    "ok": true,
+    "detail": "todos=2",
+    "ms": 26
+  },
+  {
+    "module": "K-misc",
+    "case": "workbench-staff",
+    "ok": true,
+    "detail": "",
+    "ms": 13
+  },
+  {
+    "module": "K-misc",
+    "case": "settings-share-off",
+    "ok": true,
+    "detail": "",
+    "ms": 133
+  },
+  {
+    "module": "K-misc",
+    "case": "settings-share-on",
+    "ok": true,
+    "detail": "",
+    "ms": 124
+  },
+  {
+    "module": "K-misc",
+    "case": "settings-staff-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 2
+  },
+  {
+    "module": "L-fe",
+    "case": "open-admin",
+    "ok": false,
+    "detail": "status=<urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>",
+    "ms": 2055
+  },
+  {
+    "module": "L-fe",
+    "case": "open-store",
+    "ok": false,
+    "detail": "status=<urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>",
+    "ms": 2033
+  },
+  {
+    "module": "L-fe",
+    "case": "open-customer",
+    "ok": false,
+    "detail": "status=<urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>",
+    "ms": 2033
+  },
+  {
+    "module": "L-extra",
+    "case": "admin-customers",
+    "ok": true,
+    "detail": "",
+    "ms": 23
+  },
+  {
+    "module": "L-extra",
+    "case": "staff-projects",
+    "ok": true,
+    "detail": "",
+    "ms": 2
+  },
+  {
+    "module": "L-extra",
+    "case": "admin-appts",
+    "ok": true,
+    "detail": "",
+    "ms": 27
+  },
+  {
+    "module": "L-extra",
+    "case": "admin-verifies",
+    "ok": true,
+    "detail": "",
+    "ms": 3
+  },
+  {
+    "module": "L-extra",
+    "case": "admin-stock-all",
+    "ok": true,
+    "detail": "n=10",
+    "ms": 4
+  },
+  {
+    "module": "L-extra",
+    "case": "staff-create-appt",
+    "ok": true,
+    "detail": "status=200 id=11 err=",
+    "ms": 70
+  },
+  {
+    "module": "L-extra",
+    "case": "staff-salary-records",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 55
+  },
+  {
+    "module": "L-extra",
+    "case": "save-salary-rules",
+    "ok": true,
+    "detail": "status=200 err=",
+    "ms": 91
+  },
+  {
+    "module": "M-matrix",
+    "case": "admin:GET:/api/dashboard",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 69
+  },
+  {
+    "module": "M-matrix",
+    "case": "manager:GET:/api/dashboard",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 21
+  },
+  {
+    "module": "M-matrix",
+    "case": "staff:GET:/api/dashboard",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 24
+  },
+  {
+    "module": "M-matrix",
+    "case": "admin:GET:/api/workbench",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 25
+  },
+  {
+    "module": "M-matrix",
+    "case": "manager:GET:/api/workbench",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 10
+  },
+  {
+    "module": "M-matrix",
+    "case": "staff:GET:/api/workbench",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 14
+  },
+  {
+    "module": "M-matrix",
+    "case": "admin:GET:/api/stores",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "M-matrix",
+    "case": "manager:GET:/api/stores",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "M-matrix",
+    "case": "staff:GET:/api/stores",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "M-matrix",
+    "case": "admin:GET:/api/projects",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 27
+  },
+  {
+    "module": "M-matrix",
+    "case": "manager:GET:/api/projects",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "M-matrix",
+    "case": "staff:GET:/api/projects",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "M-matrix",
+    "case": "admin:GET:/api/cards",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "M-matrix",
+    "case": "manager:GET:/api/cards",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 19
+  },
+  {
+    "module": "M-matrix",
+    "case": "staff:GET:/api/cards",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 3
+  },
+  {
+    "module": "M-matrix",
+    "case": "admin:GET:/api/appointments",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 4
+  },
+  {
+    "module": "M-matrix",
+    "case": "manager:GET:/api/appointments",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "M-matrix",
+    "case": "staff:GET:/api/appointments",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "M-matrix",
+    "case": "admin:GET:/api/verifications",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 3
+  },
+  {
+    "module": "M-matrix",
+    "case": "manager:GET:/api/verifications",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 8
+  },
+  {
+    "module": "M-matrix",
+    "case": "staff:GET:/api/verifications",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 3
+  },
+  {
+    "module": "M-matrix",
+    "case": "admin:GET:/api/inventory/items",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 29
+  },
+  {
+    "module": "M-matrix",
+    "case": "manager:GET:/api/inventory/items",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 3
+  },
+  {
+    "module": "M-matrix",
+    "case": "staff:GET:/api/inventory/items",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 13
+  },
+  {
+    "module": "M-matrix",
+    "case": "admin:GET:/api/audits",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "M-matrix",
+    "case": "manager:GET:/api/audits",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 5
+  },
+  {
+    "module": "M-matrix",
+    "case": "staff:GET:/api/audits",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "M-matrix",
+    "case": "admin:GET:/api/welfare",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 4
+  },
+  {
+    "module": "M-matrix",
+    "case": "manager:GET:/api/welfare",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "M-matrix",
+    "case": "staff:GET:/api/welfare",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "M-matrix",
+    "case": "admin:GET:/api/messages",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 29
+  },
+  {
+    "module": "M-matrix",
+    "case": "manager:GET:/api/messages",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "M-matrix",
+    "case": "staff:GET:/api/messages",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "M-matrix",
+    "case": "admin:GET:/api/assessments",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "M-matrix",
+    "case": "manager:GET:/api/assessments",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 18
+  },
+  {
+    "module": "M-matrix",
+    "case": "staff:GET:/api/assessments",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  }
+]

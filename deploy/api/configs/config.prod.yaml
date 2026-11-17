@@ -1,0 +1,14 @@
+﻿http:
+  addr: ":8080"
+  mode: release
+
+db:
+  dsn: "root:改成你的密码@tcp(127.0.0.1:3306)/lanping?parseTime=true&loc=Local&charset=utf8mb4&timeout=5s&readTimeout=10s&writeTimeout=10s"
+
+jwt:
+  secret: "请改成强随机密钥"
+  expire_hours: 72
+
+migrate:
+  auto: false
+  dir: "migrations"

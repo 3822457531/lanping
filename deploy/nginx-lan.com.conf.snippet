@@ -1,0 +1,45 @@
+# ========== 复制到宝塔「配置文件」server { } 内 ==========
+# 目录要求：
+#   /www/wwwroot/lan.com/admin/   管理端 dist
+#   /www/wwwroot/lan.com/h5/      门店端 dist
+#   /www/wwwroot/lan.com/api/     lp-api（Supervisor 启动）
+#
+# 访问：
+#   http://38.92.15.60/admin/
+#   http://38.92.15.60/h5/
+#
+# server_name 建议改成：
+#   server_name lan.com 38.92.15.60;
+
+# API 反代（必须，且放在静态规则前面）
+location /api/ {
+    proxy_pass http://127.0.0.1:8080/api/;
+    proxy_http_version 1.1;
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header Authorization $http_authorization;
+    proxy_connect_timeout 60s;
+    proxy_read_timeout 60s;
+}
+
+# 管理端 SPA
+location /admin/ {
+    try_files $uri $uri/ /admin/index.html;
+}
+location = /admin {
+    return 301 /admin/;
+}
+
+# 门店 H5 SPA
+location /h5/ {
+    try_files $uri $uri/ /h5/index.html;
+}
+location = /h5 {
+    return 301 /h5/;
+}
+
+# 打开根域名时进管理端（可选）
+location = / {
+    return 302 /admin/;
+}

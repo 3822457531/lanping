@@ -1,0 +1,352 @@
+[
+  {
+    "module": "env",
+    "case": "health",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 64
+  },
+  {
+    "module": "auth",
+    "case": "login-admin",
+    "ok": true,
+    "detail": "role=admin store=1",
+    "ms": 247
+  },
+  {
+    "module": "auth",
+    "case": "login-manager",
+    "ok": true,
+    "detail": "role=manager store=2",
+    "ms": 297
+  },
+  {
+    "module": "auth",
+    "case": "login-staff",
+    "ok": true,
+    "detail": "role=staff store=1",
+    "ms": 150
+  },
+  {
+    "module": "auth",
+    "case": "bad-password",
+    "ok": true,
+    "detail": "status=401",
+    "ms": 82
+  },
+  {
+    "module": "auth",
+    "case": "me",
+    "ok": true,
+    "detail": "name=张美丽",
+    "ms": 3
+  },
+  {
+    "module": "customer",
+    "case": "create",
+    "ok": true,
+    "detail": "id=17 phone=13994505563",
+    "ms": 363
+  },
+  {
+    "module": "customer",
+    "case": "list",
+    "ok": true,
+    "detail": "total=9",
+    "ms": 175
+  },
+  {
+    "module": "customer",
+    "case": "detail",
+    "ok": true,
+    "detail": "name=E2E客户",
+    "ms": 2
+  },
+  {
+    "module": "project",
+    "case": "list",
+    "ok": true,
+    "detail": "count=6 pid=6",
+    "ms": 2
+  },
+  {
+    "module": "store",
+    "case": "list",
+    "ok": true,
+    "detail": "count=4 sid=2",
+    "ms": 1
+  },
+  {
+    "module": "appt",
+    "case": "availability",
+    "ok": true,
+    "detail": "n=3 free=2",
+    "ms": 236
+  },
+  {
+    "module": "appt",
+    "case": "create",
+    "ok": true,
+    "detail": "id=6 2026-11-14 16:10",
+    "ms": 80
+  },
+  {
+    "module": "appt",
+    "case": "conflict-reject",
+    "ok": true,
+    "detail": "status=400 err=该美容师此时段忙碌，请选择其他时间或美容师",
+    "ms": 4
+  },
+  {
+    "module": "appt",
+    "case": "same-staff-other-slot",
+    "ok": true,
+    "detail": "id=7 time=19:10",
+    "ms": 103
+  },
+  {
+    "module": "appt",
+    "case": "confirm",
+    "ok": true,
+    "detail": "id=6",
+    "ms": 316
+  },
+  {
+    "module": "appt",
+    "case": "cancel",
+    "ok": true,
+    "detail": "id=6",
+    "ms": 84
+  },
+  {
+    "module": "appt",
+    "case": "list",
+    "ok": true,
+    "detail": "total=3",
+    "ms": 7
+  },
+  {
+    "module": "card",
+    "case": "open-times",
+    "ok": true,
+    "detail": "id=12 remain=3 kind=times",
+    "ms": 390
+  },
+  {
+    "module": "card",
+    "case": "open-amount",
+    "ok": true,
+    "detail": "id=13 amount=500",
+    "ms": 323
+  },
+  {
+    "module": "card",
+    "case": "list",
+    "ok": true,
+    "detail": "total=11",
+    "ms": 3
+  },
+  {
+    "module": "settings",
+    "case": "verify-mock",
+    "ok": true,
+    "detail": "verify_mode=mock",
+    "ms": 175
+  },
+  {
+    "module": "verify",
+    "case": "draft-mock-sms",
+    "ok": true,
+    "detail": "id=3 no=HX202611146643",
+    "ms": 340
+  },
+  {
+    "module": "verify",
+    "case": "sms-log-exists",
+    "ok": true,
+    "detail": "last_status=模拟未发",
+    "ms": 2
+  },
+  {
+    "module": "verify",
+    "case": "confirm",
+    "ok": true,
+    "detail": "id=3",
+    "ms": 147
+  },
+  {
+    "module": "verify",
+    "case": "remain-decrement",
+    "ok": true,
+    "detail": "remain=2 expect=2",
+    "ms": 3
+  },
+  {
+    "module": "verify",
+    "case": "amount-card-reject",
+    "ok": true,
+    "detail": "err=储值卡请走金额核销，暂不支持次数核销",
+    "ms": 2
+  },
+  {
+    "module": "verify",
+    "case": "over-times-reject",
+    "ok": true,
+    "detail": "err=剩余次数不足",
+    "ms": 62
+  },
+  {
+    "module": "workbench",
+    "case": "store",
+    "ok": true,
+    "detail": "appt=1 todos=2",
+    "ms": 39
+  },
+  {
+    "module": "workbench",
+    "case": "admin-dashboard",
+    "ok": true,
+    "detail": "customers=9",
+    "ms": 8
+  },
+  {
+    "module": "inventory",
+    "case": "items",
+    "ok": true,
+    "detail": "count=6",
+    "ms": 53
+  },
+  {
+    "module": "inventory",
+    "case": "create-item",
+    "ok": true,
+    "detail": "id=7 sku=E2E9988",
+    "ms": 218
+  },
+  {
+    "module": "inventory",
+    "case": "stock-out",
+    "ok": true,
+    "detail": "qty=2",
+    "ms": 306
+  },
+  {
+    "module": "inventory",
+    "case": "insufficient-reject",
+    "ok": true,
+    "detail": "err=库存不足",
+    "ms": 64
+  },
+  {
+    "module": "inventory",
+    "case": "qty-after-out",
+    "ok": true,
+    "detail": "qty=8",
+    "ms": 3
+  },
+  {
+    "module": "register",
+    "case": "apply",
+    "ok": true,
+    "detail": "phone=13763036395",
+    "ms": 91
+  },
+  {
+    "module": "register",
+    "case": "audit-visible",
+    "ok": true,
+    "detail": "auditId=5",
+    "ms": 54
+  },
+  {
+    "module": "register",
+    "case": "approve",
+    "ok": true,
+    "detail": "id=5",
+    "ms": 231
+  },
+  {
+    "module": "register",
+    "case": "login-after-approve",
+    "ok": true,
+    "detail": "role=staff",
+    "ms": 137
+  },
+  {
+    "module": "salary",
+    "case": "rules",
+    "ok": true,
+    "detail": "has=True",
+    "ms": 54
+  },
+  {
+    "module": "salary",
+    "case": "compute",
+    "ok": true,
+    "detail": "month=2026-11",
+    "ms": 554
+  },
+  {
+    "module": "salary",
+    "case": "records",
+    "ok": true,
+    "detail": "count=8",
+    "ms": 53
+  },
+  {
+    "module": "salary",
+    "case": "assessments",
+    "ok": true,
+    "detail": "total=2",
+    "ms": 29
+  },
+  {
+    "module": "attendance",
+    "case": "checkin",
+    "ok": true,
+    "detail": "method=定位",
+    "ms": 109
+  },
+  {
+    "module": "attendance",
+    "case": "today",
+    "ok": true,
+    "detail": "in=14:10:45",
+    "ms": 2
+  },
+  {
+    "module": "misc",
+    "case": "welfare",
+    "ok": true,
+    "detail": "total=5",
+    "ms": 96
+  },
+  {
+    "module": "misc",
+    "case": "messages",
+    "ok": true,
+    "detail": "total=1",
+    "ms": 39
+  },
+  {
+    "module": "misc",
+    "case": "operate-logs",
+    "ok": true,
+    "detail": "total=64",
+    "ms": 5
+  },
+  {
+    "module": "perm",
+    "case": "staff-create-item-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 1
+  },
+  {
+    "module": "perm",
+    "case": "no-token-denied",
+    "ok": true,
+    "detail": "status=401",
+    "ms": 1
+  }
+]

@@ -1,0 +1,3502 @@
+[
+  {
+    "module": "A-env",
+    "case": "health-api",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 65
+  },
+  {
+    "module": "A-env",
+    "case": "health-root",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "A-auth",
+    "case": "login-admin",
+    "ok": true,
+    "detail": "role=admin",
+    "ms": 224
+  },
+  {
+    "module": "A-auth",
+    "case": "login-manager",
+    "ok": true,
+    "detail": "role=manager",
+    "ms": 258
+  },
+  {
+    "module": "A-auth",
+    "case": "login-staff",
+    "ok": true,
+    "detail": "role=staff",
+    "ms": 150
+  },
+  {
+    "module": "A-auth",
+    "case": "login-wrong-pwd",
+    "ok": true,
+    "detail": "status=401",
+    "ms": 85
+  },
+  {
+    "module": "A-auth",
+    "case": "login-empty-phone",
+    "ok": true,
+    "detail": "status=400",
+    "ms": 1
+  },
+  {
+    "module": "A-auth",
+    "case": "login-empty-pwd",
+    "ok": true,
+    "detail": "status=401",
+    "ms": 94
+  },
+  {
+    "module": "A-auth",
+    "case": "login-unknown",
+    "ok": true,
+    "detail": "status=401",
+    "ms": 2
+  },
+  {
+    "module": "A-auth",
+    "case": "login-empty-body",
+    "ok": true,
+    "detail": "status=400",
+    "ms": 1
+  },
+  {
+    "module": "A-auth",
+    "case": "login-nullish",
+    "ok": true,
+    "detail": "status=400",
+    "ms": 1
+  },
+  {
+    "module": "A-auth",
+    "case": "me-admin",
+    "ok": true,
+    "detail": "",
+    "ms": 1
+  },
+  {
+    "module": "A-auth",
+    "case": "me-manager",
+    "ok": true,
+    "detail": "",
+    "ms": 1
+  },
+  {
+    "module": "A-auth",
+    "case": "me-staff",
+    "ok": true,
+    "detail": "",
+    "ms": 1
+  },
+  {
+    "module": "A-auth",
+    "case": "me-no-token",
+    "ok": true,
+    "detail": "status=401",
+    "ms": 1
+  },
+  {
+    "module": "A-auth",
+    "case": "me-bad-token",
+    "ok": true,
+    "detail": "status=401",
+    "ms": 1
+  },
+  {
+    "module": "A-auth",
+    "case": "api-no-token",
+    "ok": true,
+    "detail": "status=401",
+    "ms": 1
+  },
+  {
+    "module": "A-auth",
+    "case": "customer-login",
+    "ok": true,
+    "detail": "err=",
+    "ms": 44
+  },
+  {
+    "module": "A-auth",
+    "case": "customer-me",
+    "ok": true,
+    "detail": "",
+    "ms": 18
+  },
+  {
+    "module": "A-auth",
+    "case": "customer-login-empty",
+    "ok": true,
+    "detail": "status=400",
+    "ms": 1
+  },
+  {
+    "module": "A-auth",
+    "case": "public-stores",
+    "ok": true,
+    "detail": "n=5",
+    "ms": 1
+  },
+  {
+    "module": "B-admin-route",
+    "case": "fe-dashboard",
+    "ok": true,
+    "detail": "数据看板 status=200",
+    "ms": 47
+  },
+  {
+    "module": "B-admin-route",
+    "case": "spa-shell-dashboard",
+    "ok": true,
+    "detail": "len=421",
+    "ms": 47
+  },
+  {
+    "module": "B-admin-menu",
+    "case": "api-数据看板",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 12
+  },
+  {
+    "module": "B-admin-route",
+    "case": "fe-customers",
+    "ok": true,
+    "detail": "客户管理 status=200",
+    "ms": 7
+  },
+  {
+    "module": "B-admin-route",
+    "case": "spa-shell-customers",
+    "ok": true,
+    "detail": "len=421",
+    "ms": 7
+  },
+  {
+    "module": "B-admin-menu",
+    "case": "api-客户管理",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 10
+  },
+  {
+    "module": "B-admin-route",
+    "case": "fe-employees",
+    "ok": true,
+    "detail": "员工管理 status=200",
+    "ms": 8
+  },
+  {
+    "module": "B-admin-route",
+    "case": "spa-shell-employees",
+    "ok": true,
+    "detail": "len=421",
+    "ms": 8
+  },
+  {
+    "module": "B-admin-menu",
+    "case": "api-员工管理",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 3
+  },
+  {
+    "module": "B-admin-route",
+    "case": "fe-stores",
+    "ok": true,
+    "detail": "门店管理 status=200",
+    "ms": 5
+  },
+  {
+    "module": "B-admin-route",
+    "case": "spa-shell-stores",
+    "ok": true,
+    "detail": "len=421",
+    "ms": 5
+  },
+  {
+    "module": "B-admin-menu",
+    "case": "api-门店管理",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 16
+  },
+  {
+    "module": "B-admin-route",
+    "case": "fe-audits",
+    "ok": true,
+    "detail": "审核管理 status=200",
+    "ms": 7
+  },
+  {
+    "module": "B-admin-route",
+    "case": "spa-shell-audits",
+    "ok": true,
+    "detail": "len=421",
+    "ms": 7
+  },
+  {
+    "module": "B-admin-menu",
+    "case": "api-审核管理",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 17
+  },
+  {
+    "module": "B-admin-route",
+    "case": "fe-projects",
+    "ok": true,
+    "detail": "项目管理 status=200",
+    "ms": 5
+  },
+  {
+    "module": "B-admin-route",
+    "case": "spa-shell-projects",
+    "ok": true,
+    "detail": "len=421",
+    "ms": 5
+  },
+  {
+    "module": "B-admin-menu",
+    "case": "api-项目管理",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 3
+  },
+  {
+    "module": "B-admin-route",
+    "case": "fe-cards",
+    "ok": true,
+    "detail": "开卡充值 status=200",
+    "ms": 6
+  },
+  {
+    "module": "B-admin-route",
+    "case": "spa-shell-cards",
+    "ok": true,
+    "detail": "len=421",
+    "ms": 6
+  },
+  {
+    "module": "B-admin-menu",
+    "case": "api-开卡充值",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 8
+  },
+  {
+    "module": "B-admin-route",
+    "case": "fe-verifications",
+    "ok": true,
+    "detail": "核销记录 status=200",
+    "ms": 7
+  },
+  {
+    "module": "B-admin-route",
+    "case": "spa-shell-verifications",
+    "ok": true,
+    "detail": "len=421",
+    "ms": 7
+  },
+  {
+    "module": "B-admin-menu",
+    "case": "api-核销记录",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 17
+  },
+  {
+    "module": "B-admin-route",
+    "case": "fe-appointments",
+    "ok": true,
+    "detail": "预约管理 status=200",
+    "ms": 5
+  },
+  {
+    "module": "B-admin-route",
+    "case": "spa-shell-appointments",
+    "ok": true,
+    "detail": "len=421",
+    "ms": 5
+  },
+  {
+    "module": "B-admin-menu",
+    "case": "api-预约管理",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 3
+  },
+  {
+    "module": "B-admin-route",
+    "case": "fe-inventory",
+    "ok": true,
+    "detail": "出入库 status=200",
+    "ms": 6
+  },
+  {
+    "module": "B-admin-route",
+    "case": "spa-shell-inventory",
+    "ok": true,
+    "detail": "len=421",
+    "ms": 6
+  },
+  {
+    "module": "B-admin-menu",
+    "case": "api-出入库",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 42
+  },
+  {
+    "module": "B-admin-route",
+    "case": "fe-assessments",
+    "ok": true,
+    "detail": "考核情况 status=200",
+    "ms": 6
+  },
+  {
+    "module": "B-admin-route",
+    "case": "spa-shell-assessments",
+    "ok": true,
+    "detail": "len=421",
+    "ms": 6
+  },
+  {
+    "module": "B-admin-menu",
+    "case": "api-考核情况",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 3
+  },
+  {
+    "module": "B-admin-route",
+    "case": "fe-salary",
+    "ok": true,
+    "detail": "薪资管理 status=200",
+    "ms": 4
+  },
+  {
+    "module": "B-admin-route",
+    "case": "spa-shell-salary",
+    "ok": true,
+    "detail": "len=421",
+    "ms": 4
+  },
+  {
+    "module": "B-admin-menu",
+    "case": "api-薪资管理",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 42
+  },
+  {
+    "module": "B-admin-route",
+    "case": "fe-welfare",
+    "ok": true,
+    "detail": "福利管理 status=200",
+    "ms": 5
+  },
+  {
+    "module": "B-admin-route",
+    "case": "spa-shell-welfare",
+    "ok": true,
+    "detail": "len=421",
+    "ms": 5
+  },
+  {
+    "module": "B-admin-menu",
+    "case": "api-福利管理",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "B-admin-route",
+    "case": "fe-settings",
+    "ok": true,
+    "detail": "系统设置 status=200",
+    "ms": 6
+  },
+  {
+    "module": "B-admin-route",
+    "case": "spa-shell-settings",
+    "ok": true,
+    "detail": "len=421",
+    "ms": 6
+  },
+  {
+    "module": "B-admin-menu",
+    "case": "api-系统设置",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 11
+  },
+  {
+    "module": "B-admin-route",
+    "case": "fe-logs",
+    "ok": true,
+    "detail": "操作日志 status=200",
+    "ms": 6
+  },
+  {
+    "module": "B-admin-route",
+    "case": "spa-shell-logs",
+    "ok": true,
+    "detail": "len=421",
+    "ms": 6
+  },
+  {
+    "module": "B-admin-menu",
+    "case": "api-操作日志",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 17
+  },
+  {
+    "module": "B-admin-route",
+    "case": "fe-login",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 5
+  },
+  {
+    "module": "B-admin-route",
+    "case": "fe-unknown-spa-fallback",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 4
+  },
+  {
+    "module": "C-store-route",
+    "case": "fe-home",
+    "ok": true,
+    "detail": "工作台 status=200",
+    "ms": 111
+  },
+  {
+    "module": "C-store-route",
+    "case": "fe-appointments",
+    "ok": true,
+    "detail": "预约 status=200",
+    "ms": 51
+  },
+  {
+    "module": "C-store-route",
+    "case": "fe-verify",
+    "ok": true,
+    "detail": "核销 status=200",
+    "ms": 49
+  },
+  {
+    "module": "C-store-route",
+    "case": "fe-mine",
+    "ok": true,
+    "detail": "我的 status=200",
+    "ms": 109
+  },
+  {
+    "module": "C-store-route",
+    "case": "fe-verify",
+    "ok": true,
+    "detail": "发起核销 status=200",
+    "ms": 135
+  },
+  {
+    "module": "C-store-route",
+    "case": "fe-appointments",
+    "ok": true,
+    "detail": "预约服务 status=200",
+    "ms": 6
+  },
+  {
+    "module": "C-store-route",
+    "case": "fe-salary",
+    "ok": true,
+    "detail": "我的薪资 status=200",
+    "ms": 7
+  },
+  {
+    "module": "C-store-route",
+    "case": "fe-assessment",
+    "ok": true,
+    "detail": "我的考核 status=200",
+    "ms": 9
+  },
+  {
+    "module": "C-store-route",
+    "case": "fe-clockin",
+    "ok": true,
+    "detail": "打卡上班 status=200",
+    "ms": 6
+  },
+  {
+    "module": "C-store-route",
+    "case": "fe-messages",
+    "ok": true,
+    "detail": "消息中心 status=200",
+    "ms": 5
+  },
+  {
+    "module": "C-store-route",
+    "case": "fe-cards",
+    "ok": true,
+    "detail": "开卡充值 status=200",
+    "ms": 5
+  },
+  {
+    "module": "C-store-route",
+    "case": "fe-verifications",
+    "ok": true,
+    "detail": "核销列表 status=200",
+    "ms": 5
+  },
+  {
+    "module": "C-store-route",
+    "case": "fe-employees",
+    "ok": true,
+    "detail": "员工管理 status=200",
+    "ms": 4
+  },
+  {
+    "module": "C-store-route",
+    "case": "fe-inventory",
+    "ok": true,
+    "detail": "出入库 status=200",
+    "ms": 3
+  },
+  {
+    "module": "C-store-route",
+    "case": "fe-settings",
+    "ok": true,
+    "detail": "设置 status=200",
+    "ms": 5
+  },
+  {
+    "module": "C-store-route",
+    "case": "fe-customers",
+    "ok": true,
+    "detail": "客户 status=200",
+    "ms": 4
+  },
+  {
+    "module": "C-store-route",
+    "case": "fe-projects",
+    "ok": true,
+    "detail": "项目 status=200",
+    "ms": 4
+  },
+  {
+    "module": "C-store-route",
+    "case": "fe-login",
+    "ok": true,
+    "detail": "登录 status=200",
+    "ms": 4
+  },
+  {
+    "module": "C-store-route",
+    "case": "fe-register",
+    "ok": true,
+    "detail": "注册 status=200",
+    "ms": 5
+  },
+  {
+    "module": "C-store-api",
+    "case": "home-workbench-mgr",
+    "ok": true,
+    "detail": "keys=['card_amount', 'customer_total', 'month_performance', 'new_customers', 'pending_audit', 'pending_verify', 'revenue', 'staff_total']",
+    "ms": 11
+  },
+  {
+    "module": "C-store-api",
+    "case": "home-workbench-staff",
+    "ok": true,
+    "detail": "",
+    "ms": 13
+  },
+  {
+    "module": "C-store-api",
+    "case": "page-customers",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 25
+  },
+  {
+    "module": "C-store-api",
+    "case": "page-projects",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "C-store-api",
+    "case": "page-cards",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "C-store-api",
+    "case": "page-verifications",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "C-store-api",
+    "case": "page-appointments",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 3
+  },
+  {
+    "module": "C-store-api",
+    "case": "page-inventory-items",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "C-store-api",
+    "case": "page-inventory-stock",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "C-store-api",
+    "case": "page-users",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "C-store-api",
+    "case": "page-audits",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "C-store-api",
+    "case": "page-salary",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "C-store-api",
+    "case": "page-assessment",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "C-store-api",
+    "case": "page-messages",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "C-store-api",
+    "case": "page-settings",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "C-store-api",
+    "case": "page-attendance-today",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "C-store-api",
+    "case": "staff-inventory-create-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 1
+  },
+  {
+    "module": "C-store-api",
+    "case": "staff-settings-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 1
+  },
+  {
+    "module": "D-cust-route",
+    "case": "fe-落地页",
+    "ok": true,
+    "detail": "path=/ status=200",
+    "ms": 46
+  },
+  {
+    "module": "D-cust-route",
+    "case": "fe-核销确认页",
+    "ok": true,
+    "detail": "path=/verify/demo-token status=200",
+    "ms": 73
+  },
+  {
+    "module": "D-cust-api",
+    "case": "public-verify-missing",
+    "ok": true,
+    "detail": "status=404",
+    "ms": 10
+  },
+  {
+    "module": "D-cust-api",
+    "case": "public-confirm-missing",
+    "ok": true,
+    "detail": "status=400",
+    "ms": 7
+  },
+  {
+    "module": "E-store",
+    "case": "list-admin",
+    "ok": true,
+    "detail": "n=5",
+    "ms": 18
+  },
+  {
+    "module": "E-store",
+    "case": "list-manager",
+    "ok": true,
+    "detail": "n=5",
+    "ms": 24
+  },
+  {
+    "module": "E-store",
+    "case": "list-staff",
+    "ok": true,
+    "detail": "n=5",
+    "ms": 4
+  },
+  {
+    "module": "E-store",
+    "case": "btn-create",
+    "ok": true,
+    "detail": "id=6",
+    "ms": 139
+  },
+  {
+    "module": "E-store",
+    "case": "btn-create-mgr-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 54
+  },
+  {
+    "module": "E-store",
+    "case": "btn-create-staff-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 57
+  },
+  {
+    "module": "E-store",
+    "case": "create-empty-name",
+    "ok": true,
+    "detail": "status=400 err=请填写门店名称",
+    "ms": 20
+  },
+  {
+    "module": "E-store",
+    "case": "btn-edit",
+    "ok": true,
+    "detail": "",
+    "ms": 118
+  },
+  {
+    "module": "E-store",
+    "case": "btn-status-off",
+    "ok": true,
+    "detail": "",
+    "ms": 83
+  },
+  {
+    "module": "E-store",
+    "case": "btn-status-on",
+    "ok": true,
+    "detail": "",
+    "ms": 91
+  },
+  {
+    "module": "E-store",
+    "case": "btn-edit-staff-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 1
+  },
+  {
+    "module": "F-user",
+    "case": "list-admin",
+    "ok": true,
+    "detail": "n=11",
+    "ms": 77
+  },
+  {
+    "module": "F-user",
+    "case": "list-manager",
+    "ok": true,
+    "detail": "n=5",
+    "ms": 2
+  },
+  {
+    "module": "F-user",
+    "case": "list-staff",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "F-user",
+    "case": "btn-create",
+    "ok": true,
+    "detail": "id=12 err=",
+    "ms": 188
+  },
+  {
+    "module": "F-user",
+    "case": "btn-edit",
+    "ok": true,
+    "detail": "",
+    "ms": 92
+  },
+  {
+    "module": "F-user",
+    "case": "btn-edit-by-mgr",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 108
+  },
+  {
+    "module": "F-user",
+    "case": "create-staff-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 1
+  },
+  {
+    "module": "F-user",
+    "case": "create-missing-phone",
+    "ok": true,
+    "detail": "err=请填写姓名和手机号",
+    "ms": 1
+  },
+  {
+    "module": "F-user",
+    "case": "create-by-manager",
+    "ok": true,
+    "detail": "id=13 err=",
+    "ms": 177
+  },
+  {
+    "module": "G-customer",
+    "case": "btn-create-0",
+    "ok": true,
+    "detail": "id=22",
+    "ms": 142
+  },
+  {
+    "module": "G-customer",
+    "case": "btn-create-1",
+    "ok": true,
+    "detail": "id=23",
+    "ms": 156
+  },
+  {
+    "module": "G-customer",
+    "case": "btn-create-2",
+    "ok": true,
+    "detail": "id=24",
+    "ms": 166
+  },
+  {
+    "module": "G-customer",
+    "case": "btn-create-3",
+    "ok": true,
+    "detail": "id=25",
+    "ms": 133
+  },
+  {
+    "module": "G-customer",
+    "case": "customer-login-created",
+    "ok": true,
+    "detail": "err=",
+    "ms": 3
+  },
+  {
+    "module": "G-customer",
+    "case": "customer-me-created",
+    "ok": true,
+    "detail": "",
+    "ms": 3
+  },
+  {
+    "module": "G-customer",
+    "case": "customer-cards",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 4
+  },
+  {
+    "module": "G-customer",
+    "case": "create-missing-phone",
+    "ok": true,
+    "detail": "err=请填写姓名和手机号",
+    "ms": 74
+  },
+  {
+    "module": "G-customer",
+    "case": "create-dup-observe",
+    "ok": true,
+    "detail": "status=400 ok=False err=Error 1062 (23000): Duplicate entry '13994649133' for key 'uk_mobile'",
+    "ms": 142
+  },
+  {
+    "module": "G-customer",
+    "case": "btn-search",
+    "ok": true,
+    "detail": "total=1",
+    "ms": 37
+  },
+  {
+    "module": "G-customer",
+    "case": "list-page1",
+    "ok": true,
+    "detail": "n=5",
+    "ms": 4
+  },
+  {
+    "module": "G-customer",
+    "case": "list-page2",
+    "ok": true,
+    "detail": "n=2",
+    "ms": 3
+  },
+  {
+    "module": "G-customer",
+    "case": "detail",
+    "ok": true,
+    "detail": "",
+    "ms": 4
+  },
+  {
+    "module": "G-customer",
+    "case": "detail-missing",
+    "ok": true,
+    "detail": "status=404",
+    "ms": 5
+  },
+  {
+    "module": "G-customer",
+    "case": "btn-edit",
+    "ok": true,
+    "detail": "",
+    "ms": 99
+  },
+  {
+    "module": "G-customer",
+    "case": "level-银卡会员",
+    "ok": true,
+    "detail": "",
+    "ms": 92
+  },
+  {
+    "module": "G-customer",
+    "case": "level-金卡会员",
+    "ok": true,
+    "detail": "",
+    "ms": 107
+  },
+  {
+    "module": "G-customer",
+    "case": "level-钻石会员",
+    "ok": true,
+    "detail": "",
+    "ms": 92
+  },
+  {
+    "module": "G-customer",
+    "case": "birthday-upcoming",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 56
+  },
+  {
+    "module": "G-customer",
+    "case": "list-staff",
+    "ok": true,
+    "detail": "total=15",
+    "ms": 3
+  },
+  {
+    "module": "G-customer",
+    "case": "create-by-staff",
+    "ok": true,
+    "detail": "status=200 err=",
+    "ms": 125
+  },
+  {
+    "module": "G-customer",
+    "case": "btn-delete",
+    "ok": true,
+    "detail": "id=25",
+    "ms": 108
+  },
+  {
+    "module": "G-customer",
+    "case": "detail-after-delete",
+    "ok": true,
+    "detail": "status=404",
+    "ms": 4
+  },
+  {
+    "module": "H-project",
+    "case": "list",
+    "ok": true,
+    "detail": "n=6",
+    "ms": 81
+  },
+  {
+    "module": "H-project",
+    "case": "list-on-shelf",
+    "ok": true,
+    "detail": "n=6",
+    "ms": 5
+  },
+  {
+    "module": "H-project",
+    "case": "btn-create",
+    "ok": true,
+    "detail": "id=8",
+    "ms": 93
+  },
+  {
+    "module": "H-project",
+    "case": "create-mgr-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 59
+  },
+  {
+    "module": "H-project",
+    "case": "create-staff-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 2
+  },
+  {
+    "module": "H-project",
+    "case": "btn-edit",
+    "ok": true,
+    "detail": "",
+    "ms": 87
+  },
+  {
+    "module": "H-project",
+    "case": "btn-off-shelf",
+    "ok": true,
+    "detail": "",
+    "ms": 108
+  },
+  {
+    "module": "H-project",
+    "case": "btn-on-shelf",
+    "ok": true,
+    "detail": "",
+    "ms": 91
+  },
+  {
+    "module": "H-project",
+    "case": "btn-delete",
+    "ok": true,
+    "detail": "err=",
+    "ms": 114
+  },
+  {
+    "module": "H-project",
+    "case": "create-invalid",
+    "ok": true,
+    "detail": "status=400",
+    "ms": 1
+  },
+  {
+    "module": "H-project",
+    "case": "list-staff",
+    "ok": true,
+    "detail": "n=3",
+    "ms": 2
+  },
+  {
+    "module": "I-appt",
+    "case": "btn-check-availability",
+    "ok": true,
+    "detail": "n=6",
+    "ms": 90
+  },
+  {
+    "module": "I-appt",
+    "case": "create-empty",
+    "ok": true,
+    "detail": "err=请选择客户、项目、日期和时间",
+    "ms": 2
+  },
+  {
+    "module": "I-appt",
+    "case": "create-missing-time",
+    "ok": true,
+    "detail": "err=请选择客户、项目、日期和时间",
+    "ms": 1
+  },
+  {
+    "module": "I-appt",
+    "case": "create-bad-customer",
+    "ok": true,
+    "detail": "err=请选择客户、项目、日期和时间",
+    "ms": 1
+  },
+  {
+    "module": "I-appt",
+    "case": "create-bad-project",
+    "ok": true,
+    "detail": "err=请选择客户、项目、日期和时间",
+    "ms": 1
+  },
+  {
+    "module": "I-appt",
+    "case": "btn-create",
+    "ok": true,
+    "detail": "id=12",
+    "ms": 90
+  },
+  {
+    "module": "I-appt",
+    "case": "conflict-same-slot",
+    "ok": true,
+    "detail": "err=该美容师此时段忙碌，请选择其他时间或美容师",
+    "ms": 18
+  },
+  {
+    "module": "I-appt",
+    "case": "create-other-slot",
+    "ok": false,
+    "detail": "id=None",
+    "ms": 61
+  },
+  {
+    "module": "I-appt",
+    "case": "other-staff-same-time",
+    "ok": true,
+    "detail": "id=13 err=",
+    "ms": 85
+  },
+  {
+    "module": "I-appt",
+    "case": "btn-status-已确认",
+    "ok": true,
+    "detail": "",
+    "ms": 91
+  },
+  {
+    "module": "I-appt",
+    "case": "btn-status-待确认",
+    "ok": true,
+    "detail": "",
+    "ms": 107
+  },
+  {
+    "module": "I-appt",
+    "case": "btn-status-已完成",
+    "ok": true,
+    "detail": "",
+    "ms": 90
+  },
+  {
+    "module": "I-appt",
+    "case": "btn-status-已取消",
+    "ok": true,
+    "detail": "",
+    "ms": 124
+  },
+  {
+    "module": "I-appt",
+    "case": "btn-status-post-alias",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 99
+  },
+  {
+    "module": "I-appt",
+    "case": "btn-delete",
+    "ok": true,
+    "detail": "err=",
+    "ms": 91
+  },
+  {
+    "module": "I-appt",
+    "case": "btn-confirm-a2",
+    "ok": true,
+    "detail": "skipped",
+    "ms": 0
+  },
+  {
+    "module": "I-appt",
+    "case": "btn-cancel-a2",
+    "ok": true,
+    "detail": "skipped",
+    "ms": 0
+  },
+  {
+    "module": "I-appt",
+    "case": "list-mgr",
+    "ok": true,
+    "detail": "total=6",
+    "ms": 4
+  },
+  {
+    "module": "I-appt",
+    "case": "list-staff",
+    "ok": true,
+    "detail": "total=5",
+    "ms": 5
+  },
+  {
+    "module": "I-appt",
+    "case": "list-admin",
+    "ok": true,
+    "detail": "total=11",
+    "ms": 82
+  },
+  {
+    "module": "I-appt",
+    "case": "availability-later",
+    "ok": true,
+    "detail": "n=6",
+    "ms": 11
+  },
+  {
+    "module": "I-appt",
+    "case": "availability-no-time",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 8
+  },
+  {
+    "module": "I-appt",
+    "case": "create-by-staff",
+    "ok": true,
+    "detail": "status=400 err=该美容师此时段忙碌，请选择其他时间或美容师",
+    "ms": 4
+  },
+  {
+    "module": "J-card",
+    "case": "btn-open-times",
+    "ok": true,
+    "detail": "id=18 remain=8",
+    "ms": 262
+  },
+  {
+    "module": "J-card",
+    "case": "btn-open-amount",
+    "ok": true,
+    "detail": "id=19",
+    "ms": 277
+  },
+  {
+    "module": "J-card",
+    "case": "open-times-default-amount",
+    "ok": true,
+    "detail": "id=20",
+    "ms": 343
+  },
+  {
+    "module": "J-card",
+    "case": "open-by-admin",
+    "ok": true,
+    "detail": "id=21",
+    "ms": 239
+  },
+  {
+    "module": "J-card",
+    "case": "open-by-staff",
+    "ok": true,
+    "detail": "status=200 err=",
+    "ms": 223
+  },
+  {
+    "module": "J-card",
+    "case": "corner-no-customer",
+    "ok": true,
+    "detail": "err=请选择客户",
+    "ms": 2
+  },
+  {
+    "module": "J-card",
+    "case": "corner-times-no-project",
+    "ok": true,
+    "detail": "err=请选择项目",
+    "ms": 75
+  },
+  {
+    "module": "J-card",
+    "case": "corner-amount-zero",
+    "ok": true,
+    "detail": "err=请输入充值金额",
+    "ms": 1
+  },
+  {
+    "module": "J-card",
+    "case": "corner-amount-neg",
+    "ok": true,
+    "detail": "err=请输入充值金额",
+    "ms": 1
+  },
+  {
+    "module": "J-card",
+    "case": "corner-bad-kind",
+    "ok": true,
+    "detail": "err=开卡类型仅支持次卡或储值",
+    "ms": 1
+  },
+  {
+    "module": "J-card",
+    "case": "pay-微信",
+    "ok": true,
+    "detail": "status=200 err=",
+    "ms": 243
+  },
+  {
+    "module": "J-card",
+    "case": "pay-支付宝",
+    "ok": true,
+    "detail": "status=200 err=",
+    "ms": 358
+  },
+  {
+    "module": "J-card",
+    "case": "pay-现金",
+    "ok": true,
+    "detail": "status=200 err=",
+    "ms": 342
+  },
+  {
+    "module": "J-card",
+    "case": "pay-刷卡",
+    "ok": true,
+    "detail": "status=200 err=",
+    "ms": 229
+  },
+  {
+    "module": "J-card",
+    "case": "pay-其他",
+    "ok": true,
+    "detail": "status=200 err=",
+    "ms": 216
+  },
+  {
+    "module": "J-card",
+    "case": "list-mgr",
+    "ok": true,
+    "detail": "total=25",
+    "ms": 62
+  },
+  {
+    "module": "J-card",
+    "case": "list-by-customer",
+    "ok": true,
+    "detail": "n=10",
+    "ms": 4
+  },
+  {
+    "module": "J-card",
+    "case": "list-admin",
+    "ok": true,
+    "detail": "total=25",
+    "ms": 9
+  },
+  {
+    "module": "J-card",
+    "case": "list-staff",
+    "ok": true,
+    "detail": "total=25",
+    "ms": 3
+  },
+  {
+    "module": "K-verify",
+    "case": "settings-mock",
+    "ok": true,
+    "detail": "",
+    "ms": 85
+  },
+  {
+    "module": "K-verify",
+    "case": "settings-get",
+    "ok": true,
+    "detail": "mode=mock",
+    "ms": 4
+  },
+  {
+    "module": "K-verify",
+    "case": "settings-get-mgr",
+    "ok": true,
+    "detail": "",
+    "ms": 22
+  },
+  {
+    "module": "K-verify",
+    "case": "btn-create-draft",
+    "ok": true,
+    "detail": "id=8",
+    "ms": 114
+  },
+  {
+    "module": "K-verify",
+    "case": "get-draft",
+    "ok": true,
+    "detail": "status=待确认",
+    "ms": 75
+  },
+  {
+    "module": "K-verify",
+    "case": "list-mgr",
+    "ok": true,
+    "detail": "total=0",
+    "ms": 3
+  },
+  {
+    "module": "K-verify",
+    "case": "list-admin",
+    "ok": true,
+    "detail": "total=6",
+    "ms": 13
+  },
+  {
+    "module": "K-verify",
+    "case": "sms-logs",
+    "ok": true,
+    "detail": "n=6",
+    "ms": 2
+  },
+  {
+    "module": "K-verify",
+    "case": "sms-logs-staff-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 5
+  },
+  {
+    "module": "K-verify",
+    "case": "draft-concurrent-observe",
+    "ok": true,
+    "detail": "ok=False id=None err=Error 1062 (23000): Duplicate entry 'HX202611147651' for key 'uk_verify_no'",
+    "ms": 120
+  },
+  {
+    "module": "K-verify",
+    "case": "btn-cancel-draft2",
+    "ok": true,
+    "detail": "no-draft2",
+    "ms": 0
+  },
+  {
+    "module": "K-verify",
+    "case": "public-get",
+    "ok": true,
+    "detail": "status=待确认",
+    "ms": 3
+  },
+  {
+    "module": "K-verify",
+    "case": "fe-customer-verify-page",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 10
+  },
+  {
+    "module": "K-verify",
+    "case": "confirm-bad-token",
+    "ok": true,
+    "detail": "err=核销令牌不匹配",
+    "ms": 5
+  },
+  {
+    "module": "K-verify",
+    "case": "btn-confirm-mock",
+    "ok": true,
+    "detail": "err=",
+    "ms": 97
+  },
+  {
+    "module": "K-verify",
+    "case": "confirm-twice",
+    "ok": true,
+    "detail": "err=核销单状态不可确认",
+    "ms": 2
+  },
+  {
+    "module": "K-verify",
+    "case": "btn-refund",
+    "ok": true,
+    "detail": "err=",
+    "ms": 89
+  },
+  {
+    "module": "K-verify",
+    "case": "refund-staff-denied",
+    "ok": true,
+    "detail": "status=403 err=无权访问",
+    "ms": 1
+  },
+  {
+    "module": "K-verify",
+    "case": "draft-on-card3",
+    "ok": true,
+    "detail": "id=10",
+    "ms": 133
+  },
+  {
+    "module": "K-verify",
+    "case": "btn-cancel",
+    "ok": true,
+    "detail": "err=",
+    "ms": 108
+  },
+  {
+    "module": "K-verify",
+    "case": "cancel-twice",
+    "ok": true,
+    "detail": "status=400 err=仅待确认可取消",
+    "ms": 3
+  },
+  {
+    "module": "K-verify",
+    "case": "draft-amount-card",
+    "ok": true,
+    "detail": "status=400 err=储值卡请走金额核销，暂不支持次数核销 id=None",
+    "ms": 88
+  },
+  {
+    "module": "K-verify",
+    "case": "cancel-amount-draft",
+    "ok": true,
+    "detail": "no-draft",
+    "ms": 0
+  },
+  {
+    "module": "K-verify",
+    "case": "draft-bad-card",
+    "ok": true,
+    "detail": "err=请选择卡项",
+    "ms": 2
+  },
+  {
+    "module": "K-verify",
+    "case": "draft-zero-times",
+    "ok": true,
+    "detail": "status=400 err=Error 1062 (23000): Duplicate entry 'HX202611147652' for key 'uk_verify_no'",
+    "ms": 92
+  },
+  {
+    "module": "K-verify",
+    "case": "draft-over-remain",
+    "ok": true,
+    "detail": "status=400 err=剩余次数不足",
+    "ms": 5
+  },
+  {
+    "module": "K-verify",
+    "case": "draft-for-public",
+    "ok": false,
+    "detail": "id=None",
+    "ms": 73
+  },
+  {
+    "module": "K-verify",
+    "case": "public-confirm",
+    "ok": true,
+    "detail": "skipped",
+    "ms": 0
+  },
+  {
+    "module": "L-inv",
+    "case": "tab-products-list",
+    "ok": true,
+    "detail": "n=8",
+    "ms": 42
+  },
+  {
+    "module": "L-inv",
+    "case": "tab-stock-list",
+    "ok": true,
+    "detail": "n=4",
+    "ms": 22
+  },
+  {
+    "module": "L-inv",
+    "case": "stock-all",
+    "ok": true,
+    "detail": "n=10",
+    "ms": 3
+  },
+  {
+    "module": "L-inv",
+    "case": "btn-create-product",
+    "ok": true,
+    "detail": "id=9 err=",
+    "ms": 195
+  },
+  {
+    "module": "L-inv",
+    "case": "btn-create-product-admin",
+    "ok": true,
+    "detail": "already",
+    "ms": 0
+  },
+  {
+    "module": "L-inv",
+    "case": "btn-edit-product",
+    "ok": false,
+    "detail": "err=请填写 SKU",
+    "ms": 2
+  },
+  {
+    "module": "L-inv",
+    "case": "btn-order-in",
+    "ok": true,
+    "detail": "err=",
+    "ms": 164
+  },
+  {
+    "module": "L-inv",
+    "case": "btn-order-out",
+    "ok": true,
+    "detail": "err=",
+    "ms": 148
+  },
+  {
+    "module": "L-inv",
+    "case": "order-out-overstock",
+    "ok": true,
+    "detail": "status=200 err=",
+    "ms": 149
+  },
+  {
+    "module": "L-inv",
+    "case": "order-type-observe",
+    "ok": true,
+    "detail": "status=200 ok=True err=",
+    "ms": 139
+  },
+  {
+    "module": "L-inv",
+    "case": "stock-after-orders",
+    "ok": true,
+    "detail": "n=5",
+    "ms": 2
+  },
+  {
+    "module": "L-inv",
+    "case": "btn-delete-product",
+    "ok": false,
+    "detail": "err=该产品仍有门店库存，无法删除",
+    "ms": 119
+  },
+  {
+    "module": "L-inv",
+    "case": "staff-create-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 14
+  },
+  {
+    "module": "L-inv",
+    "case": "staff-order-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 3
+  },
+  {
+    "module": "L-inv",
+    "case": "create-empty-name",
+    "ok": true,
+    "detail": "status=400",
+    "ms": 2
+  },
+  {
+    "module": "L-inv",
+    "case": "list-items-staff",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "M-audit",
+    "case": "register-page-stores",
+    "ok": true,
+    "detail": "n=6",
+    "ms": 1
+  },
+  {
+    "module": "M-audit",
+    "case": "fe-register",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 6
+  },
+  {
+    "module": "M-audit",
+    "case": "btn-submit-register-a",
+    "ok": true,
+    "detail": "err=",
+    "ms": 71
+  },
+  {
+    "module": "M-audit",
+    "case": "btn-submit-register-b",
+    "ok": true,
+    "detail": "err=",
+    "ms": 99
+  },
+  {
+    "module": "M-audit",
+    "case": "register-missing-store",
+    "ok": true,
+    "detail": "status=400 err=请填写姓名、手机号并选择门店",
+    "ms": 1
+  },
+  {
+    "module": "M-audit",
+    "case": "login-before-approve",
+    "ok": true,
+    "detail": "status=401",
+    "ms": 2
+  },
+  {
+    "module": "M-audit",
+    "case": "list-mgr",
+    "ok": true,
+    "detail": "n=7",
+    "ms": 2
+  },
+  {
+    "module": "M-audit",
+    "case": "list-admin",
+    "ok": true,
+    "detail": "n=9",
+    "ms": 20
+  },
+  {
+    "module": "M-audit",
+    "case": "btn-approve",
+    "ok": true,
+    "detail": "id=8",
+    "ms": 168
+  },
+  {
+    "module": "M-audit",
+    "case": "login-after-approve",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 137
+  },
+  {
+    "module": "M-audit",
+    "case": "btn-reject",
+    "ok": true,
+    "detail": "id=9",
+    "ms": 99
+  },
+  {
+    "module": "M-audit",
+    "case": "login-after-reject",
+    "ok": true,
+    "detail": "status=401",
+    "ms": 2
+  },
+  {
+    "module": "M-audit",
+    "case": "approve-staff-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 1
+  },
+  {
+    "module": "N-salary",
+    "case": "page-rules",
+    "ok": true,
+    "detail": "keys=['manager', 'manager_extra', 'name', 'note', 'staff']",
+    "ms": 2
+  },
+  {
+    "module": "N-salary",
+    "case": "btn-save-rules",
+    "ok": true,
+    "detail": "err=",
+    "ms": 70
+  },
+  {
+    "module": "N-salary",
+    "case": "save-rules-mgr-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 2
+  },
+  {
+    "module": "N-salary",
+    "case": "btn-compute",
+    "ok": true,
+    "detail": "month=2026-11",
+    "ms": 800
+  },
+  {
+    "module": "N-salary",
+    "case": "compute-mgr-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 63
+  },
+  {
+    "module": "N-salary",
+    "case": "list-records",
+    "ok": true,
+    "detail": "n=13",
+    "ms": 15
+  },
+  {
+    "module": "N-salary",
+    "case": "my-salary-staff",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 38
+  },
+  {
+    "module": "N-salary",
+    "case": "my-salary-mgr",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 3
+  },
+  {
+    "module": "N-salary",
+    "case": "btn-status-confirm",
+    "ok": true,
+    "detail": "err=",
+    "ms": 105
+  },
+  {
+    "module": "N-salary",
+    "case": "btn-status-paid",
+    "ok": true,
+    "detail": "err=",
+    "ms": 91
+  },
+  {
+    "module": "N-salary",
+    "case": "status-mgr-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 1
+  },
+  {
+    "module": "N-assess",
+    "case": "list-admin",
+    "ok": true,
+    "detail": "total=4",
+    "ms": 2
+  },
+  {
+    "module": "N-assess",
+    "case": "list-mgr",
+    "ok": true,
+    "detail": "total=2",
+    "ms": 2
+  },
+  {
+    "module": "N-assess",
+    "case": "my-assess-staff",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "N-assess",
+    "case": "result-alias",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 89
+  },
+  {
+    "module": "N-att",
+    "case": "btn-check-定位",
+    "ok": true,
+    "detail": "err=",
+    "ms": 93
+  },
+  {
+    "module": "N-att",
+    "case": "btn-check-Wi-Fi",
+    "ok": true,
+    "detail": "err=",
+    "ms": 4
+  },
+  {
+    "module": "N-att",
+    "case": "btn-check-人脸",
+    "ok": true,
+    "detail": "err=",
+    "ms": 74
+  },
+  {
+    "module": "N-att",
+    "case": "today-staff",
+    "ok": true,
+    "detail": "data={'check_in': '14:10:45', 'check_out': '14:27:35', 'checked_in': True, 'checked_out': True, 'date': '2026-11-14', 'status': '正常'}",
+    "ms": 3
+  },
+  {
+    "module": "N-att",
+    "case": "check-mgr",
+    "ok": true,
+    "detail": "",
+    "ms": 87
+  },
+  {
+    "module": "N-att",
+    "case": "today-mgr",
+    "ok": true,
+    "detail": "data={'check_in': '14:15:04', 'check_out': '14:27:35', 'checked_in': True, 'checked_out': True, 'date': '2026-11-14', 'status': '正常'}",
+    "ms": 2
+  },
+  {
+    "module": "N-att",
+    "case": "check-unknown-method",
+    "ok": true,
+    "detail": "status=200 err=",
+    "ms": 2
+  },
+  {
+    "module": "O-misc",
+    "case": "welfare-list",
+    "ok": true,
+    "detail": "n=5",
+    "ms": 2
+  },
+  {
+    "module": "O-misc",
+    "case": "btn-welfare-create",
+    "ok": true,
+    "detail": "id=7 err=",
+    "ms": 128
+  },
+  {
+    "module": "O-misc",
+    "case": "btn-welfare-edit",
+    "ok": true,
+    "detail": "",
+    "ms": 141
+  },
+  {
+    "module": "O-misc",
+    "case": "btn-welfare-issue",
+    "ok": true,
+    "detail": "err=",
+    "ms": 126
+  },
+  {
+    "module": "O-misc",
+    "case": "issue-wrong-field-observe",
+    "ok": true,
+    "detail": "status=400 err=请选择员工",
+    "ms": 1
+  },
+  {
+    "module": "O-misc",
+    "case": "btn-welfare-delete",
+    "ok": true,
+    "detail": "",
+    "ms": 105
+  },
+  {
+    "module": "O-misc",
+    "case": "welfare-staff-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 109
+  },
+  {
+    "module": "O-misc",
+    "case": "welfare-mgr-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 1
+  },
+  {
+    "module": "O-misc",
+    "case": "messages-staff",
+    "ok": true,
+    "detail": "total=1",
+    "ms": 23
+  },
+  {
+    "module": "O-misc",
+    "case": "messages-mgr",
+    "ok": true,
+    "detail": "total=1",
+    "ms": 7
+  },
+  {
+    "module": "O-misc",
+    "case": "messages-admin",
+    "ok": true,
+    "detail": "total=0",
+    "ms": 2
+  },
+  {
+    "module": "O-misc",
+    "case": "logs-admin",
+    "ok": true,
+    "detail": "total=108",
+    "ms": 4
+  },
+  {
+    "module": "O-misc",
+    "case": "logs-page2",
+    "ok": true,
+    "detail": "n=10",
+    "ms": 3
+  },
+  {
+    "module": "O-misc",
+    "case": "logs-mgr-denied",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 4
+  },
+  {
+    "module": "O-misc",
+    "case": "dashboard",
+    "ok": true,
+    "detail": "keys=['card_amount', 'customer_total', 'new_customers', 'pending_audit', 'pending_verify', 'revenue', 'staff_total', 'trend']",
+    "ms": 24
+  },
+  {
+    "module": "O-misc",
+    "case": "dashboard-mgr",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 10
+  },
+  {
+    "module": "O-misc",
+    "case": "dashboard-staff",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 10
+  },
+  {
+    "module": "O-misc",
+    "case": "settings-verify_mode-mock",
+    "ok": true,
+    "detail": "",
+    "ms": 136
+  },
+  {
+    "module": "O-misc",
+    "case": "settings-verify_mode-real",
+    "ok": true,
+    "detail": "",
+    "ms": 84
+  },
+  {
+    "module": "O-misc",
+    "case": "settings-customer_share-true",
+    "ok": true,
+    "detail": "",
+    "ms": 153
+  },
+  {
+    "module": "O-misc",
+    "case": "settings-customer_share-false",
+    "ok": true,
+    "detail": "",
+    "ms": 99
+  },
+  {
+    "module": "O-misc",
+    "case": "settings-save-mgr",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "P-deny",
+    "case": "staff:POST:/api/stores",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 62
+  },
+  {
+    "module": "P-deny",
+    "case": "staff:POST:/api/projects",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 7
+  },
+  {
+    "module": "P-deny",
+    "case": "staff:DELETE:/api/projects/1",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 3
+  },
+  {
+    "module": "P-deny",
+    "case": "staff:POST:/api/welfare",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 4
+  },
+  {
+    "module": "P-deny",
+    "case": "staff:PUT:/api/salary/rules",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 1
+  },
+  {
+    "module": "P-deny",
+    "case": "staff:POST:/api/salary/compute",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 1
+  },
+  {
+    "module": "P-deny",
+    "case": "staff:GET:/api/sms/logs",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 1
+  },
+  {
+    "module": "P-deny",
+    "case": "staff:GET:/api/operate-logs",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 1
+  },
+  {
+    "module": "P-deny",
+    "case": "manager:POST:/api/stores",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 1
+  },
+  {
+    "module": "P-deny",
+    "case": "manager:POST:/api/projects",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 2
+  },
+  {
+    "module": "P-deny",
+    "case": "manager:POST:/api/welfare",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 2
+  },
+  {
+    "module": "P-deny",
+    "case": "manager:POST:/api/salary/compute",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 1
+  },
+  {
+    "module": "P-deny",
+    "case": "manager:GET:/api/operate-logs",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 1
+  },
+  {
+    "module": "P-deny",
+    "case": "manager:PUT:/api/salary/rules",
+    "ok": true,
+    "detail": "status=403",
+    "ms": 1
+  },
+  {
+    "module": "Q-fe-admin",
+    "case": "sweep-",
+    "ok": true,
+    "detail": "status=200 len=421",
+    "ms": 4
+  },
+  {
+    "module": "Q-fe-admin",
+    "case": "sweep-login",
+    "ok": true,
+    "detail": "status=200 len=421",
+    "ms": 5
+  },
+  {
+    "module": "Q-fe-admin",
+    "case": "sweep-dashboard",
+    "ok": true,
+    "detail": "status=200 len=421",
+    "ms": 5
+  },
+  {
+    "module": "Q-fe-admin",
+    "case": "sweep-customers",
+    "ok": true,
+    "detail": "status=200 len=421",
+    "ms": 4
+  },
+  {
+    "module": "Q-fe-admin",
+    "case": "sweep-employees",
+    "ok": true,
+    "detail": "status=200 len=421",
+    "ms": 4
+  },
+  {
+    "module": "Q-fe-admin",
+    "case": "sweep-stores",
+    "ok": true,
+    "detail": "status=200 len=421",
+    "ms": 6
+  },
+  {
+    "module": "Q-fe-admin",
+    "case": "sweep-audits",
+    "ok": true,
+    "detail": "status=200 len=421",
+    "ms": 4
+  },
+  {
+    "module": "Q-fe-admin",
+    "case": "sweep-projects",
+    "ok": true,
+    "detail": "status=200 len=421",
+    "ms": 4
+  },
+  {
+    "module": "Q-fe-admin",
+    "case": "sweep-cards",
+    "ok": true,
+    "detail": "status=200 len=421",
+    "ms": 5
+  },
+  {
+    "module": "Q-fe-admin",
+    "case": "sweep-verifications",
+    "ok": true,
+    "detail": "status=200 len=421",
+    "ms": 5
+  },
+  {
+    "module": "Q-fe-admin",
+    "case": "sweep-appointments",
+    "ok": true,
+    "detail": "status=200 len=421",
+    "ms": 4
+  },
+  {
+    "module": "Q-fe-admin",
+    "case": "sweep-inventory",
+    "ok": true,
+    "detail": "status=200 len=421",
+    "ms": 5
+  },
+  {
+    "module": "Q-fe-admin",
+    "case": "sweep-assessments",
+    "ok": true,
+    "detail": "status=200 len=421",
+    "ms": 6
+  },
+  {
+    "module": "Q-fe-admin",
+    "case": "sweep-salary",
+    "ok": true,
+    "detail": "status=200 len=421",
+    "ms": 4
+  },
+  {
+    "module": "Q-fe-admin",
+    "case": "sweep-welfare",
+    "ok": true,
+    "detail": "status=200 len=421",
+    "ms": 5
+  },
+  {
+    "module": "Q-fe-admin",
+    "case": "sweep-settings",
+    "ok": true,
+    "detail": "status=200 len=421",
+    "ms": 6
+  },
+  {
+    "module": "Q-fe-admin",
+    "case": "sweep-logs",
+    "ok": true,
+    "detail": "status=200 len=421",
+    "ms": 5
+  },
+  {
+    "module": "Q-fe-store",
+    "case": "sweep-",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 5
+  },
+  {
+    "module": "Q-fe-store",
+    "case": "sweep-appointments",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 5
+  },
+  {
+    "module": "Q-fe-store",
+    "case": "sweep-assessment",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 4
+  },
+  {
+    "module": "Q-fe-store",
+    "case": "sweep-cards",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 4
+  },
+  {
+    "module": "Q-fe-store",
+    "case": "sweep-clockin",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 5
+  },
+  {
+    "module": "Q-fe-store",
+    "case": "sweep-customers",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 4
+  },
+  {
+    "module": "Q-fe-store",
+    "case": "sweep-employees",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 4
+  },
+  {
+    "module": "Q-fe-store",
+    "case": "sweep-home",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 6
+  },
+  {
+    "module": "Q-fe-store",
+    "case": "sweep-inventory",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 4
+  },
+  {
+    "module": "Q-fe-store",
+    "case": "sweep-login",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 3
+  },
+  {
+    "module": "Q-fe-store",
+    "case": "sweep-messages",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 4
+  },
+  {
+    "module": "Q-fe-store",
+    "case": "sweep-mine",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 5
+  },
+  {
+    "module": "Q-fe-store",
+    "case": "sweep-projects",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 4
+  },
+  {
+    "module": "Q-fe-store",
+    "case": "sweep-register",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 5
+  },
+  {
+    "module": "Q-fe-store",
+    "case": "sweep-salary",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 7
+  },
+  {
+    "module": "Q-fe-store",
+    "case": "sweep-settings",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 4
+  },
+  {
+    "module": "Q-fe-store",
+    "case": "sweep-verifications",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 4
+  },
+  {
+    "module": "Q-fe-store",
+    "case": "sweep-verify",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 6
+  },
+  {
+    "module": "Q-fe-cust",
+    "case": "sweep-",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 5
+  },
+  {
+    "module": "Q-fe-cust",
+    "case": "sweep-verify-x",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 8
+  },
+  {
+    "module": "Q-fe-cust",
+    "case": "sweep-verify-4f6de7292ff09d771588c5dff256e49b",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 5
+  },
+  {
+    "module": "Q-fe-proxy",
+    "case": "admin-api-proxy",
+    "ok": true,
+    "detail": "status=200 body={\"ok\":true,\"data\":{\"status\":\"up\"}}",
+    "ms": 9
+  },
+  {
+    "module": "Q-fe-proxy",
+    "case": "store-api-proxy",
+    "ok": true,
+    "detail": "status=200 body={\"ok\":true,\"data\":{\"status\":\"up\"}}",
+    "ms": 24
+  },
+  {
+    "module": "Q-fe-proxy",
+    "case": "customer-api-proxy",
+    "ok": true,
+    "detail": "status=200 body={\"ok\":true,\"data\":{\"status\":\"up\"}}",
+    "ms": 16
+  },
+  {
+    "module": "R-corner",
+    "case": "paging-customers-Size=0",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 5
+  },
+  {
+    "module": "R-corner",
+    "case": "paging-customers-Size=200",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 3
+  },
+  {
+    "module": "R-corner",
+    "case": "paging-customers-=-1",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "R-corner",
+    "case": "paging-projects-Size=100",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 9
+  },
+  {
+    "module": "R-corner",
+    "case": "paging-cards-Size=1",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 3
+  },
+  {
+    "module": "R-corner",
+    "case": "paging-appointments-Size=100",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 3
+  },
+  {
+    "module": "R-corner",
+    "case": "paging-verifications-Size=100",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "R-corner",
+    "case": "bad-id-GET-customers",
+    "ok": true,
+    "detail": "status=404",
+    "ms": 2
+  },
+  {
+    "module": "R-corner",
+    "case": "bad-id-GET-verifications",
+    "ok": true,
+    "detail": "status=404",
+    "ms": 3
+  },
+  {
+    "module": "R-corner",
+    "case": "bad-id-PUT-stores",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "R-corner",
+    "case": "bad-id-DELETE-customers",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "R-corner",
+    "case": "bad-id-POST-verifications",
+    "ok": true,
+    "detail": "status=400",
+    "ms": 5
+  },
+  {
+    "module": "R-corner",
+    "case": "bad-id-POST-audits",
+    "ok": true,
+    "detail": "status=400",
+    "ms": 1
+  },
+  {
+    "module": "R-corner",
+    "case": "workbench-has-todos-key",
+    "ok": true,
+    "detail": "keys=['card_amount', 'customer_total', 'month_performance', 'new_customers', 'pending_audit', 'pending_verify', 'revenue', 'staff_total', 'today_appointments', 'today_appt_count', 'todos', 'trend', 'user', 'verify_amount', 'verify_count']",
+    "ms": 11
+  },
+  {
+    "module": "R-corner",
+    "case": "dashboard-object",
+    "ok": true,
+    "detail": "keys=['card_amount', 'customer_total', 'new_customers', 'pending_audit', 'pending_verify', 'revenue', 'staff_total', 'trend', 'verify_amount', 'verify_count']",
+    "ms": 7
+  },
+  {
+    "module": "R-corner",
+    "case": "admin-create-customer",
+    "ok": true,
+    "detail": "id=28",
+    "ms": 140
+  },
+  {
+    "module": "R-corner",
+    "case": "verify-list-tail",
+    "ok": true,
+    "detail": "n=1",
+    "ms": 40
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/dashboard:0",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 16
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/workbench:1",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 11
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/stores:2",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/customers:3",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/customers/birthday/upcoming:4",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/users:5",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/projects:6",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/projects:7",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 13
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/cards:8",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 4
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/appointments:9",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 3
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/verifications:10",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/inventory/items:11",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 5
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/inventory/stock:12",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 3
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/audits:13",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 3
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/assessments:14",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 23
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/assessments/result:15",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/salary/rules:16",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/salary/records:17",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 3
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/welfare:18",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/messages:19",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/settings:20",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/attendance/today:21",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/auth/me:22",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/dashboard:23",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 64
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/workbench:24",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 24
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/stores:25",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/customers:26",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/customers/birthday/upcoming:27",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/users:28",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/projects:29",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/projects:30",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/cards:31",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 3
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/appointments:32",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 11
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/verifications:33",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 3
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/inventory/items:34",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 4
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/inventory/stock:35",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/audits:36",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/assessments:37",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/assessments/result:38",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/salary/rules:39",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/salary/records:40",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 4
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/welfare:41",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/messages:42",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/settings:43",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/attendance/today:44",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/auth/me:45",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/dashboard:46",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 20
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/workbench:47",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 11
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/stores:48",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 9
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/customers:49",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/customers/birthday/upcoming:50",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 4
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/users:51",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/projects:52",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 5
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/projects:53",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/cards:54",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/appointments:55",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/verifications:56",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 9
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/inventory/items:57",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 47
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/inventory/stock:58",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/audits:59",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/assessments:60",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/assessments/result:61",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/salary/rules:62",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/salary/records:63",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 8
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/welfare:64",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/messages:65",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/settings:66",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/attendance/today:67",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/auth/me:68",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/dashboard:69",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 7
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/workbench:70",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 11
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/stores:71",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/customers:72",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/customers/birthday/upcoming:73",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/users:74",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/projects:75",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/projects:76",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/cards:77",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/appointments:78",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/verifications:79",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/inventory/items:80",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/inventory/stock:81",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/audits:82",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/assessments:83",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/assessments/result:84",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/salary/rules:85",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/salary/records:86",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/welfare:87",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/messages:88",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/settings:89",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/attendance/today:90",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/auth/me:91",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/dashboard:92",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 12
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/workbench:93",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 20
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/stores:94",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 16
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/customers:95",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/customers/birthday/upcoming:96",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/users:97",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/projects:98",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/projects:99",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 9
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/cards:100",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/appointments:101",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 7
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/verifications:102",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/inventory/items:103",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 5
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/inventory/stock:104",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/audits:105",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/assessments:106",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/assessments/result:107",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/salary/rules:108",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/salary/records:109",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 3
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/welfare:110",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/messages:111",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/settings:112",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/attendance/today:113",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/auth/me:114",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 1
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/dashboard:115",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 21
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/workbench:116",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 10
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/stores:117",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 9
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/customers:118",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "staff:GET:/api/customers/birthday/upcoming:119",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 5
+  },
+  {
+    "module": "Z-matrix",
+    "case": "admin:GET:/api/users:120",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 2
+  },
+  {
+    "module": "Z-matrix",
+    "case": "manager:GET:/api/projects:121",
+    "ok": true,
+    "detail": "status=200",
+    "ms": 5
+  }
+]

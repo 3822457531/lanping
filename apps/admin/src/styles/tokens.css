@@ -1,0 +1,27 @@
+:root {
+  --lp-bg: #f3f5f8;
+  --lp-surface: #ffffff;
+  --lp-sidebar: #1c2430;
+  --lp-sidebar-text: #c9d1db;
+  --lp-sidebar-active: #ffffff;
+  --lp-accent: #c45b6c;
+  --lp-accent-soft: #f8e9ec;
+  --lp-text: #1f2933;
+  --lp-muted: #6b7785;
+  --lp-border: #e6ebf1;
+  --lp-success: #2f9e74;
+  --lp-warning: #d0892d;
+  --lp-danger: #d45454;
+  --lp-radius: 10px;
+  --lp-font: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --lp-num: "DIN Alternate", "Tabular Numbers", "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body, #app { height: 100%; margin: 0; }
+body {
+  font-family: var(--lp-font);
+  color: var(--lp-text);
+  background: var(--lp-bg);
+}
+a { color: inherit; text-decoration: none; }

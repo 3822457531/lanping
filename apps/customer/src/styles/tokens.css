@@ -1,0 +1,12 @@
+:root {
+  --lp-accent: #d45a72;
+  --van-primary-color: #d45a72;
+}
+* { box-sizing: border-box; }
+html, body, #app { height: 100%; margin: 0; }
+body {
+  font-family: "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  background: #f6f3f1;
+  color: #2a2422;
+  -webkit-font-smoothing: antialiased;
+}

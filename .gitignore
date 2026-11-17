@@ -1,0 +1,41 @@
+node_modules/
+dist/
+*.exe
+server/bin/
+.DS_Store
+.env
+.env.*
+!.env.example
+*.log
+.idea/
+.vscode/
+__pycache__/
+*.tmp
+apps/**/node_modules/
+apps/**/dist/
+.mysql-data/
+.mysql-conf/
+.tools/
+server/api-out.log
+server/api-err.log
+server/*.log
+
+# Android / Capacitor build
+apps/store/android/.gradle/
+apps/store/android/app/build/
+apps/store/android/build/
+apps/store/android/local.properties
+apps/store/android/captures/
+apps/store/**/*.apk
+apps/store/**/*.aab
+apps/store/store-debug.apk
+apps/store/android/app/src/main/assets/public/
+*.keystore
+*.jks
+
+# Nested legacy tree (own git repo)
+lp/
+
+# OS / editor
+Thumbs.db
+Desktop.ini
